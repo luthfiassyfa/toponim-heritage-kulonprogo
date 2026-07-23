@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Toponim Heritage</title>
+
+    <!-- Leaflet -->
+    <link rel="stylesheet"
+        href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
+
+    <!-- Marker Cluster -->
+    <link rel="stylesheet"
+        href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.css"/>
+
+    <link rel="stylesheet"
+        href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.Default.css"/>
+
+    <!-- Font Awesome -->
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <!-- CSS -->
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <!-- MAP -->
+
+    <div id="map"></div>
+
+
+    <!-- TOOLBAR -->
+
+    <div class="toolbar">
+
+        <!-- Kecamatan -->
+
+        <select id="kecamatanFilter">
+
+            <option value="Semua">Semua Kapanewon</option>
+
+        </select>
+
+        <!-- Kategori -->
+
+        <select id="kategoriFilter">
+
+            <option value="Semua">Semua Kategori</option>
+
+            <option value="Tetap">Toponim Tetap</option>
+
+            <option value="Baru">Toponim Baru</option>
+
+            <option value="Hilang">Toponim Hilang</option>
+
+        </select>
+
+        <!-- Search -->
+
+        <input
+            type="text"
+            id="searchInput"
+            placeholder="Cari nama toponim..."
+        >
+        <div id="searchResult"></div>
+    </div>
+
+
+    <!-- LEGENDA -->
+
+    <div class="legend">
+
+        <h4>Legenda</h4>
+
+        <div>
+
+            <span class="circle green"></span>
+
+            Toponim Tetap
+
+        </div>
+
+        <div>
+
+            <span class="circle yellow"></span>
+
+            Toponim Baru
+
+        </div>
+
+        <div>
+
+            <span class="circle red"></span>
+
+            Toponim Hilang
+
+        </div>
+
+        <hr>
+
+        <div>
+
+            ─────
+
+            Batas Kapanewon
+
+        </div>
+
+    </div>
+
+    <!-- SCRIPT -->
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+    <!-- Marker Cluster -->
+
+    <script src="https://unpkg.com/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js"></script>
+
+    <!-- Google Satellite -->
+
+    <script src="https://unpkg.com/leaflet.gridlayer.googlemutant@latest/dist/Leaflet.GoogleMutant.js"></script>
+
+    <!-- JS -->
+
+    <script src="js/map.js"></script>
+
+</body>
+
+</html>

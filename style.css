@@ -1,0 +1,175 @@
+html,body{
+    margin:0;
+    padding:0;
+    width:100%;
+    height:100%;
+    font-family:Arial,Helvetica,sans-serif;
+}
+
+#map{
+    width:100%;
+    height:100vh;
+}
+
+/* Toolbar */
+
+.toolbar{
+
+    position:absolute;
+
+    top:18px;
+
+    left:50%;
+
+    transform:translateX(-50%);
+
+    background:white;
+
+    padding:12px;
+
+    border-radius:12px;
+
+    display:flex;
+
+    gap:10px;
+
+    z-index:1000;
+
+    box-shadow:0 5px 18px rgba(0,0,0,.2);
+
+}
+
+.toolbar select{
+
+    padding:8px;
+
+    border:1px solid #ddd;
+
+    border-radius:8px;
+
+}
+
+.toolbar input{
+
+    width:220px;
+
+    padding:8px;
+
+    border:1px solid #ddd;
+
+    border-radius:8px;
+
+}
+
+
+/* Legenda */
+
+.legend{
+
+position:absolute;
+
+left:15px;
+
+bottom:25px;
+
+background:white;
+
+padding:12px;
+
+border-radius:12px;
+
+box-shadow:0 4px 15px rgba(0,0,0,.2);
+
+z-index:1000;
+
+font-size:14px;
+
+}
+
+.legend h4{
+
+margin:0 0 10px;
+
+}
+
+.circle{
+
+display:inline-block;
+
+width:12px;
+
+height:12px;
+
+border-radius:50%;
+
+margin-right:6px;
+
+}
+
+.green{
+
+background:#28a745;
+
+}
+
+.yellow{
+
+background:#ffc107;
+
+}
+
+.red{
+
+background:#dc3545;
+
+}
+
+/* ===========================
+   SEARCH RESULT
+=========================== */
+
+#searchResult{
+
+position:absolute;
+
+top:58px;
+
+left:50%;
+
+transform:translateX(-50%);
+
+width:260px;
+
+max-height:250px;
+
+overflow-y:auto;
+
+background:white;
+
+border-radius:10px;
+
+box-shadow:0 5px 18px rgba(0,0,0,.2);
+
+z-index:9999;
+
+display:none;
+
+}
+
+.search-item{
+
+padding:10px 14px;
+
+cursor:pointer;
+
+border-bottom:1px solid #eee;
+
+font-size:14px;
+
+}
+
+.search-item:hover{
+
+background:#f2f2f2;
+
+}
